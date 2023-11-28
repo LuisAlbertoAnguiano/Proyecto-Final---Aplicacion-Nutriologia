@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACE3E97A-2A1E-463F-8DDD-1BD8DF145DE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Nutriologia.My.MyApplication</StartupObject>
+    <RootNamespace>Nutriologia</RootNamespace>
+    <AssemblyName>Nutriologia</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Nutriologia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Nutriologia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AgregarUsuario.Designer.vb">
+      <DependentUpon>AgregarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgregarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosCatalogo\frm_Alimentos.Designer.vb">
+      <DependentUpon>frm_Alimentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosCatalogo\frm_Alimentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosCatalogo\frm_CategoriasFisicas.Designer.vb">
+      <DependentUpon>frm_CategoriasFisicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosCatalogo\frm_CategoriasFisicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosCatalogo\frm_Dietas.Designer.vb">
+      <DependentUpon>frm_Dietas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosCatalogo\frm_Dietas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_DietasPaciente.Designer.vb">
+      <DependentUpon>frm_DietasPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_DietasPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosCatalogo\frm_Sistemas.Designer.vb">
+      <DependentUpon>frm_Sistemas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosCatalogo\frm_Sistemas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_ActFisica.Designer.vb">
+      <DependentUpon>frm_ActFisica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_ActFisica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_Citas.Designer.vb">
+      <DependentUpon>frm_Citas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_Citas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_DiagClinico.Designer.vb">
+      <DependentUpon>frm_DiagClinico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_DiagClinico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_FrecAlimentaria.Designer.vb">
+      <DependentUpon>frm_FrecAlimentaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_FrecAlimentaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_Revision.Designer.vb">
+      <DependentUpon>frm_Revision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_Revision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ConexionBD.vb" />
+    <Compile Include="Modulos\Funciones.vb" />
+    <Compile Include="Forms\MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_Pacientes.Designer.vb">
+      <DependentUpon>frm_Pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormulariosConsulta\frm_Pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Validaciones.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosCatalogo\frm_Alimentos.resx">
+      <DependentUpon>frm_Alimentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosCatalogo\frm_CategoriasFisicas.resx">
+      <DependentUpon>frm_CategoriasFisicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosCatalogo\frm_Dietas.resx">
+      <DependentUpon>frm_Dietas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosCatalogo\frm_Sistemas.resx">
+      <DependentUpon>frm_Sistemas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosConsulta\frm_ActFisica.resx">
+      <DependentUpon>frm_ActFisica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosConsulta\frm_Citas.resx">
+      <DependentUpon>frm_Citas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosConsulta\frm_DiagClinico.resx">
+      <DependentUpon>frm_DiagClinico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosConsulta\frm_DietasPaciente.resx">
+      <DependentUpon>frm_DietasPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosConsulta\frm_FrecAlimentaria.resx">
+      <DependentUpon>frm_FrecAlimentaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosConsulta\frm_Revision.resx">
+      <DependentUpon>frm_Revision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormulariosConsulta\frm_Pacientes.resx">
+      <DependentUpon>frm_Pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
